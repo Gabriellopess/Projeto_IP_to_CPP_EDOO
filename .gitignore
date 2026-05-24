@@ -15,3 +15,21 @@ Thumbs.db
 
 # Arquivos de configuração de IDEs
 .vscode/
+
+# --- C++ (CMake) - pasta cpp/ ---
+cpp/build/
+cpp/**/CMakeFiles/
+cpp/**/CMakeCache.txt
+cpp/**/cmake_install.cmake
+cpp/**/Makefile
+cpp/**/.cmake/
+cpp/**/.ninja_*
+cpp/**/*.o
+cpp/**/*.obj
+cpp/**/*.a
+cpp/**/*.lib
+cpp/**/*.so
+cpp/**/*.dylib
+cpp/**/*.dll
+cpp/**/*.exe
+
