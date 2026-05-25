@@ -13,7 +13,7 @@ int main() {
     std::cout << "\n=== CENARIO 1: vitoria por terminar a passarela com rosas suficientes ===\n";
     {
         Game game{cfg};
-        game.reset(269);
+        game.reset(178);
 
         const GameResult result = game.rodar_simulacao();
 
