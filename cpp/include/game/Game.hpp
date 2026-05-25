@@ -27,6 +27,9 @@ struct GameConfig {
 
     int offset_finalizacao_metros{50};
     int duracao_andar_final_ticks{120};
+
+    
+    int rosas_minimas_para_vitoria{6};
 };
 
 enum class GameResult { Running, Win, Lose };
@@ -37,7 +40,7 @@ public:
 
     void reset(std::uint32_t seed = 42);
 
-    // Simulação fixa. Retorna Win/Lose.
+    // Simulação fixa. Retorna Win/Lose
     GameResult rodar_simulacao();
 
 private:
@@ -50,7 +53,7 @@ private:
     void acelerar();
     void checar_finalizando();
 
-    // colisão + aplicação de efeito
+    // Colisão + aplicação de efeito
     void checar_colisoes();
 
     void log_tick_header() const;
